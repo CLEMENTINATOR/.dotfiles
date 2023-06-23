@@ -1,0 +1,26 @@
+[alias]
+	co = checkout
+	su = submodule update
+	fap = fetch --all --tags --prune
+	st = status
+	rbo = rebase -i origin/master
+	siu = submodule update --init --remote --recursive
+	rc = rebase --continue
+	ra = rebase --abort
+	lo = log --oneline
+	pf = push -f
+	ca = commit --amend
+	cp = cherry-pick
+	l = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset'
+	cf = commit --fixup
+	ap = add -p
+	rboa = rebase -i origin/master --autosquash
+	cm = commit -m
+	alias = config --get-regexp ^alias\\.
+	spellcheck = false
+[core]
+  	editor = nvim
+[pull]
+  	rebase = true
+[pager]
+	branch = false
